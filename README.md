@@ -1,2 +1,2 @@
 # FullyResponsiveWebsite
-This repository intend show responsive websites
+This repository intend to show responsive websites
