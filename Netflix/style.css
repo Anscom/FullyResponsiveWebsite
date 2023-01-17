@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.05rem;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/header-image.png);
+  background-position: cover;
+  background-attachment: fixed;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 50px;
+}
+
+.nav-container img {
+  margin-top: 15px;
+  width: 180px;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-container ul li {
+  margin: 0 25px;
+}
+
+.nav-container ul li select {
+  padding: 5px 45px;
+  padding-left: 0;
+  background-color: inherit;
+  color: white;
+  font-size: 1.05em;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.nav-container ul li button {
+  background-color: red;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+select option {
+  background-color: gray;
+}
+
+.header-description {
+  text-align: center;
+  margin: 100px;
+  margin-bottom: 100px;
+}
+
+.header-description input {
+  padding: 15px 300px;
+  padding-left: 3px;
+}
+
+.header-description button {
+  background-color: rgb(255, 0, 0);
+  font-size: 2em;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray-line {
+  width: 100%;
+  background-color: gray;
+  height: 7px;
+}
+
+@media (max-width: 930px) {
+  .subscribe {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .nav-container {
+    padding: 2px 5px;
+  }
+
+  .subscribe button {
+    font-size: 16px;
+    padding: 13px 30px;
+  }
+
+  .nav-container img {
+    margin-top: 15px;
+    width: 100px;
+  }
+
+  .nav-container ul li {
+    margin: 0 5px;
+  }
+
+  .header-description input {
+    padding: 15px 150px;
+    padding-left: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-description h1 {
+    font-size: 40px;
+  }
+}
+
+.section2 {
+  margin: 70px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.section2 img {
+  max-height: 350px;
+}
+
+.wordings {
+  margin-left: 20px;
+}
+
+@media (max-width: 980px) {
+  .section2 img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 625px) {
+  .section2 h2 {
+    font-size: 0.95em;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .reverse-col {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 435px) {
+  .section2 img {
+    height: 300px;
+    max-width: 300px;
+  }
+
+  .section h2 {
+    font-size: 0.2rem;
+  }
+}
+
+.faq {
+}
+
+.faq h1 {
+  text-align: center;
+}
+
+.questions {
+  background-color: gray;
+  padding: 0 15px;
+  margin: 5px auto;
+  width: 50%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.questions h5 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 5px;
+}
+.questions .row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-1 .plus .line {
+  background-color: white;
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+}
+
+.row-1 .plus .line:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+.row-1 .plus .line:nth-child(1) {
+  transform: translateY(6px);
+}
+
+.question-description {
+  display: none;
+}
+
+.question-description.active {
+  display: block;
+}
+
+.row-1 .plus.active .line:nth-child(2) {
+  transform: translateY(6px) rotate(-45deg);
+}
+
+.row-1 .plus.active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+@media (max-width: 820px) {
+  .questions {
+    width: 100%;
+  }
+}
+
+.call {
+}
+
+.call ul,
+.call ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: gray;
+  font-size: 0.9em;
+}
+
+.combination {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#callquestion {
+  display: flex;
+  cursor: default;
+  justify-content: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#ending {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+@media (max-width: 420px) {
+  .combination > div {
+    flex: 1 1 50%;
+  }
+}
