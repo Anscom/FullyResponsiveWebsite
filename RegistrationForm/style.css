@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,700&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 133, 85);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  border-width: 10%;
+  font-size: 3em;
+  text-align: center;
+}
+
+.big-container {
+  margin: 20px auto;
+  max-width: 1100px;
+  padding: 5px 25px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 10px 5px 5px black;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em;
+  padding: 0;
+}
+
+.head-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.details input,
+.details select {
+  width: 100%;
+  min-width: 300px;
+  min-height: 50px;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid gray;
+  font-size: 1.15em;
+}
+
+.fourth-section {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 20px;
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 2px;
+  width: 250px;
+  background-color: rgb(0, 183, 255);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: greenyellow;
+}
+
+.hidden {
+  display: none;
+}
